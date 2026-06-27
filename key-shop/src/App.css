@@ -253,7 +253,7 @@ padding:50px 30px;
 .cartItems{
   display:flex;
   flex-direction: column;
- gap:18px;
+  gap:18px;
 }
 
 .cartItem{
@@ -324,102 +324,83 @@ color:#d97706;
   font-size: 15px;
   font-weight: bold;
 }
-/* Order Summary */
 
 .cartSummary{
-  background-color: #f9fafb;
-  padding: 20px;
-  border-radius: 14px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-  height: fit-content;
+  background-color: #fff7ed;
+  border-radius: 15px;
+  padding: 25px;
+  position:sticky;
+  top:90px;
 }
 
 .cartSummary h2{
   margin-top: 0;
   color: #111827;
+
 }
 
-.cartSummary p{
-  font-size: 16px;
-  margin: 12px 0;
-  color: #4b5563;
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  padding:14px 0;
+  border-bottom: 1px solid #f0c98b;
 }
 
-.cartSummary h3{
-  margin: 20px 0;
+.totalRow {
+  font-size:19px;
+  border-bottom: none;
+}
+
+.totalRow strong {
   color: #d97706;
-  font-size: 24px;
 }
 
-.checkoutBtn{
+.checkOutBtn{
   width: 100%;
-  padding: 14px;
-  border: none;
-  border-radius: 8px;
+  margin-top: 20px;
+  padding:13px;
+  border:none;
+  border-radius:26px;
   background-color: #111827;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s;
+  color:white;
+  font-size:16px;
+  transition: background-color 0.3s ease, transform 0.3s;
 }
 
-.checkoutBtn:hover{
+.checkOutBtn:hover{
   background-color: #d97706;
+  transform: translateY(-3px);
 }
 
-/* Responsive */
 
-@media (max-width: 768px){
+.continueLink,
 
-  .hero{
-    flex-direction: column;
-    text-align: center;
-    padding: 40px 20px;
-  }
+.continueShoppingBtn {
 
-  .heroText{
-    width: 100%;
-  }
+  display: block;
 
-  .heroImage{
-    margin-top: 30px;
-    width: 100%;
-    max-width: 320px;
-  }
+  text-align: center;
 
-  .productGrid{
-    flex-direction: column;
-    align-items: center;
-  }
+  margin-top: 18px;
 
-  .cartLayout{
-    grid-template-columns: 1fr;
-  }
+  color: #111827;
 
-  .cartItem{
-    flex-direction: column;
-    text-align: center;
-  }
+  font-weight: bold;
 
-  .cartItemRight{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-  }
+  text-decoration: none;
+}
 
-  .cartHeading{
-    flex-direction: column;
-    gap: 15px;
-  }
+.continueShoppingBtn {
 
-  header{
-    flex-direction: column;
-    gap: 15px;
-    padding: 20px;
-  }
+  width: fit-content;
 
-  nav ul{
-    gap: 15px;
-  }
+  margin: 25px auto;
+
+  background-color: #111827;
+
+  color: white;
+
+  padding: 12px 22px;
+
+  border-radius: 25px;
 }
